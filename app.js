@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(express.json());
+bodyParser.json({limit: "2000mb"})
 
 app.post('/to_kml', (req, res) => {
     const geoGJSON = req.body; 
