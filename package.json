@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "node app.js"
   },
   "keywords": [],
@@ -14,5 +15,8 @@
     "express": "^4.17.1",
     "tokml": "^0.4.0",
     "winston": "^3.2.1"
+  },
+  "resolutions": {
+    "minimatch": "^3.0.4"
   }
 }
